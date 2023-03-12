@@ -19,7 +19,7 @@ class TransactionServiceTest {
 
     @Test
     void expectThreeTransactions() {
-        List<Transaction> transactions = transactionService.findAllByAccountNumber("123");
+        List<Transaction> transactions = transactionService.findAllByAccountNumber(123);
         assertEquals(transactions.size(), 3);
     }
 
